@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    resize: none;
+}
+html,body{
+    height: 100%;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section{
+    background-image: url('../img/banner_banner.jpg');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+} 
+section > .logo{
+    margin: 60px;
+}
+section > form h1{
+    color: #FFFFFF;
+    font-size: 33px;
+    margin: 60px;
+}
+section > form h3{
+    color: #FFFFFF;
+    margin: 15px 60px;
+}
+section > form input{
+    color: #8A607E;
+    background-color: #231121;
+    width: 365px;
+    height: 46px;
+    transition: 0.3s;
+    margin: 0 60px;
+    border: 1px solid #5f5f5f6e;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+section > form > div button{
+    margin: 40px 60px;
+    width: 107px;
+    height: 40px;
+    font-size: 17px;
+    background-color: #311735;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.3s;
+}
+section > form > div:nth-of-type(2){
+    color: #FFFFFF;
+    margin: 0 60px;
+    cursor: pointer;
+}
+section > form h5,p{
+    margin: 2px;
+    transition: 0.3s;
+}
+section > form h5,p:hover{
+    color: #CCCCCC;
+}
+section > form > input:focus{
+    color: #FFFFFF;
+}
+section > form > div > button:hover{
+    background-color: #231121fa;
+}
+@media screen and (max-width: 768px), screen and (max-height: 500px){
+    html,body{
+        width: 100% auto;
+        height: 100% auto;
+        overflow: hidden;
+    }
+    section{
+        background-image: url('../img/remoto_banner.jpg');
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-position: center 20%;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    section h1{
+        text-align: center;
+    }
+    section img{
+        margin: -50px;
+    }
+}
